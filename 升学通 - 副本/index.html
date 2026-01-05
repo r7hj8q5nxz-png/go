@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>升学通 | Shengxuetong</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top-nav">
+    <div class="logo">
+      <span class="logo-mark" aria-hidden="true"></span>
+      <span class="logo-text">升学通</span>
+    </div>
+    <div class="date" id="current-date"></div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">2026届毕业倒计时</p>
+        <h1 id="countdown-text">--</h1>
+        <p class="vision">别让倒计时定义你，去定义你的倒计时。</p>
+      </div>
+      <div class="progress">
+        <div class="progress-header">
+          <span id="progress-left">已消耗 --</span>
+          <span id="progress-right">目标日：2026.06.30</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progress-fill"></div>
+        </div>
+        <div class="progress-meta" id="progress-meta">—</div>
+      </div>
+    </section>
+
+    <section class="filters">
+      <div class="segmented" id="filter-group">
+        <button class="seg-btn active" data-filter="all">全部</button>
+        <button class="seg-btn" data-filter="law">法学特供</button>
+        <button class="seg-btn" data-filter="competitions">核心竞赛</button>
+        <button class="seg-btn" data-filter="gradgov">升学/体制</button>
+        <button class="seg-btn" data-filter="career">就业/证书</button>
+      </div>
+    </section>
+
+    <section class="grid-section">
+      <div class="section-header">
+        <h2>战略资源库</h2>
+        <p class="subtle">助你突围的核心装甲</p>
+      </div>
+      <div id="grid-container" class="grid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>CDUT 专属通道 (建设中)</span>
+  </footer>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
